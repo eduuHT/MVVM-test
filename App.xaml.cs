@@ -1,4 +1,6 @@
-﻿namespace MVVM_test
+﻿using MVVM_test.MVVM.Views;
+
+namespace MVVM_test
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new CommandsView();
         }
     }
 }

@@ -4,9 +4,7 @@
              x:Class="MVVM_test.MVVM.Views.CommandsView"
              Title="CommandsView">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Button Text="Click me!" 
+                Command="{Binding ClickCommand}" />
     </VerticalStackLayout>
 </ContentPage>
