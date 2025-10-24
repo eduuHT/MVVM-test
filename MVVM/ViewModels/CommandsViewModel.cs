@@ -23,9 +23,9 @@ namespace MVVM_test.MVVM.ViewModels
             App.Current.MainPage.DisplayAlert("Title", "Message", "Ok");
             });
 
-            SearchCommand = new Command(() =>
+            SearchCommand = new Command((search) =>
             {
-                var data = SearchData;
+                var data = search;
             });
         }
         private void Alert()
