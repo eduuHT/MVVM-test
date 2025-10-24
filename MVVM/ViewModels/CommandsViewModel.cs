@@ -10,12 +10,22 @@ namespace MVVM_test.MVVM.ViewModels
     public class CommandsViewModel
     {
         public ICommand ClickCommand { get; }
-            
+
+        public ICommand SearchCommand { get; }
+
+        public string SearchData { get; set; }
+
+
         public CommandsViewModel()
         {
             ClickCommand = new Command(() =>
             {
             App.Current.MainPage.DisplayAlert("Title", "Message", "Ok");
+            });
+
+            SearchCommand = new Command(() =>
+            {
+                var data = SearchData;
             });
         }
         private void Alert()
